@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-margin-left: 100px;
+margin-left: 50px;
+margin-right: 50px;
 background-image: url(amoung_u.jpg);
 background-size: cover
 }
@@ -10,11 +16,13 @@ background-size: cover
  
 }
 .circle{
-    display: block;
     background-color: red;
     border-radius: 50%;
     width: 25em;
     height: 25em;
     border: 4px dotted black;
 
+}
+#parent div.circle:hover{
+visibility: hidden;
 }
