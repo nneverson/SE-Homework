@@ -1,10 +1,4 @@
-document.getElementsByClassName
-('circle').onclick = function () {
-	myFunction();
-	console.log('done');
-};
+// document.getElementsByName('body').addEventListener('click', function changeColor()){
+// 	document.getElementsByClassName('circle').style.getElementsByName('circle')
+// }
 
-function myFunction() {
-	document.getElementByClassName('circle').style.display = 'none';
-	console.log('ting done');
-}
