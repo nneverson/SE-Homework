@@ -18,8 +18,8 @@ background-size: cover
 .circle{
     background-color: red;
     border-radius: 50%;
-    width: 25em;
-    height: 25em;
+    width: 13em;
+    height: 13em;
     border: 4px dotted black;
 
 }
