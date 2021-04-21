@@ -14,13 +14,13 @@
     <p id="display">secret number here: </p>
 
     <script defer>
-        
-        let userInput = document.getElementById('userInput').value
-        //'46573929245757473'
-        console.log(userInput);
-            // let lastNumber = userInput.slice(userInput.length - 4, userInput.length);
-            // let displayNumber = lastNumber.padStart(userInput.length, '*')
-        // document.getElementById('display').innerText = 'secret number here: ' + displayNumber
+
+        let userInput = document.getElementById('userInput');
+            userInput.addEventListener('input', ({ target: { value } }) => {
+                let lastNumber = value.slice(value.length - 4, value.length);
+                let displayNumber = lastNumber.padStart(value.length, '*')
+                document.getElementById('display').innerText = 'secret number here: ' + displayNumber
+            });
     </script>
 </body>
 </html>
