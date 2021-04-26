@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newstyles.css">
+   
+    <title>Clock</title>
+</head>
+<body>
+    <div id="parent" onclick="changeColor()">
+    <div class="circle" ></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"> </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+    <script>
+    let color = ['orange', 'pink', 'green']
+        let incrementer = 0
+     function changeColor() {
+        
+        let parent=  document.getElementById('parent')
+        let children = parent.getElementsByTagName('div')
+        for (let i = 0; i < children.length; i++) {
+            children[i].style.backgroundColor = color[incrementer]
+            
+            
+        }if (incrementer < color.length -1) {
+                incrementer+= 1
+            }else{
+                incrementer =0
+            }
+        
+        // console.log(children);
+        // children.style.backgroundColor = color
+        
+        //     console.log('it\'firing');
+        }
+    </script>
+</body>
+</html>

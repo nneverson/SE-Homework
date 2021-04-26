@@ -1,0 +1,21 @@
+#clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid ;
+    border-radius: 50%;
+    width: 13em;
+    height: 200px;
+
+}
+#parent{
+    display: flex;
+    justify-content: center;
+}
+.blue{
+    background-color: #0781D4;
+}
+.red {
+    background-color: red;
+}
