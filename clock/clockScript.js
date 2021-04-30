@@ -22,11 +22,12 @@ function buttonsClicked() {
 
 	startTime = new Date();
 
-	limit = parseInt(document.getElementById('tempoaryText').value);
-
+	limit = parseInt(document.getElementById('txtTempo').value);
+// parseInt converts a string into an integer
 	clearInterval(timer);
 	timer = setInterval(updateTime, 1000);
 }
+//setInterval - takes two aregument, one to excecute and the second is the time in the miliseconds between each excecution
 
 function updateTime() {
 	'use strict';
@@ -59,3 +60,8 @@ function updateTime() {
 		document.getElementById('clock').className = 'blue';
 	}
 }
+document.getElementById('clock').addEventListener('keypress', (e) => {
+	if (e.key == 'Enter') {
+		buttonsClicked();
+	}
+});
