@@ -1,10 +1,14 @@
 import React from 'react'
-import './App.css';
+import Sidebar from './Components/Sidebar'
+import Reviews from './Components/Reviews'
+import './Css/Sidebar.css'
+
 
 function App() {
   return (
     <div className="App">
-     hhh
+     <Sidebar />
+     <Reviews />
     </div>
   );
 }
