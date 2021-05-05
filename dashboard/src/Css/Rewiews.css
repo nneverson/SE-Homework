@@ -1,3 +1,32 @@
-.App{
+#reviews{
+    background-color: rgb(221,221,221);
+    grid-column: 8/13;
+
+}
+#rating{
+    background-color: rgb(221,221,221);
+    grid-column: 16/ 20;
+
+}
+#analysis{
+    background-color: rgb(221,221,221);
+    grid-column: 23/ 27;
+
+}
+#visitors{
+    background-color: rgb(221,221,221);
+    /* margin-top: 1em; */
+    grid-row: 2/7;
+    grid-column: 8/32;
+    justify-content: center;
+    align-content: center;
+} 
+#div{
+    background-color: rgb(190,189,189);
+    width: 100px;
+    height: 100px;
     
+}
+.top-component{
+    margin-top: 1em;
 }

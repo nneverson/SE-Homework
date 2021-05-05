@@ -1,7 +1,12 @@
 import React from 'react'
 import Sidebar from './Components/Sidebar'
 import Reviews from './Components/Reviews'
+import AverageRating from './Components/AverageRating';
+import Analysis from './Components/SentimentAnalysis';
+import Visitors from './Components/WebsiteVisitors'
 import './Css/Sidebar.css'
+import './Css/Rewiews.css'
+
 
 
 function App() {
@@ -9,6 +14,9 @@ function App() {
     <div className="App">
      <Sidebar />
      <Reviews />
+     <AverageRating/>
+     <Analysis/>
+     <Visitors/>
     </div>
   );
 }
