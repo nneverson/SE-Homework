@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="App">
      <Sidebar />
-     <Reviews />
-     <AverageRating/>
-     <Analysis/>
-     <Visitors/>
+     <Reviews review='1,281' />
+     <AverageRating avgRate='4.6'/>
+     <Analysis num1= '960' num2='122' num3='321'/>
+     <Visitors visitors= '821'/>
     </div>
   );
 }

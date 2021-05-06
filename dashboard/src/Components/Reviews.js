@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Reviews = () => {
+const Reviews = (props) => {
     return (
 			<div id='reviews' className='top-component'>
 				<p>Reviews</p>
-				<div>Changing number</div>
+				<div>{props.review}</div>
 			</div>
 		);
 };

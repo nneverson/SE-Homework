@@ -1,10 +1,12 @@
 import React from 'react';
 
-const SentimentAnalysis = () => {
+const SentimentAnalysis = (props) => {
 	return (
 		<div id='analysis' className='top-component'>
 			<p>analysis</p>
-			<div>Changing number</div>
+			<div>{props.num1}</div>
+			<div>{props.num2}</div>
+			<div>{props.num3}</div>
 		</div>
 	);
 };

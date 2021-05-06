@@ -1,13 +1,13 @@
 import React from 'react';
 
-const WebsiteVisitors = () => {
+const WebsiteVisitors = (props) => {
 	return (
 		<div id='visitors'>
 			<div>
-			<p>visitorsChanging number</p>
+			<p>visitors</p>
 			</div>
 
-			<div id='div'>Here is this div</div>
+			<div id='div'>{props.visitors}</div>
 		</div>
 	);
 };
