@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1"></p>
+    <script>
+        const array1= [3,4,5,6]
+        const mapMethod = array1.map(x => x **2);
+        const filterMethod = mapMethod.filter(x => x % 2 == 0)
+        console.log(filterMethod);
+        document.getElementById('p1').innerHTML = `<div> starting array is array1 = [3,4,5,6]<br> <br>I used the map method to produce a new array where the value of each index is raised to the second power. The results of that is [${mapMethod}]</div> <div><br><br>The filter method  creates a new array with all elements that pass the test implemented by the provided function. The test I will implement is that the new version of [${mapMethod}] will only contain even numbers. The results of that is [${filterMethod}]</div>`
+    </script>
+</body>
+</html>
