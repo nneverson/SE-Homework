@@ -13,7 +13,7 @@ export default class DivThree extends Component {
 		//binding the method(changeIt) to the component
 	}
 
-	changeIt = (text) => {
+	changeIt = () => {
 		if (this.state.tardis.caps) {
 			this.setState({
 				tardis: {
