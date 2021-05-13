@@ -42,11 +42,13 @@ const List = () => {
 
 	return (
 		<div>
+			<h1>Grocery List</h1>
+
 			<ol className='ui ordered list'>
 				{groceryItem
 					.filter((item) => item.isPurchased === false)
 					.map((item) => (
-						<li>
+						<li key={groceryItem.item}>
 							Item: {item.item} purchased:
 							<input
 								type='checkbox'
@@ -61,31 +63,37 @@ const List = () => {
 					))}
 			</ol>
 			<div className='ui form'>
-				<div className='field'>
-					<label htmlFor=''>Enter Grocery Item</label>
-
-					<input
-						type='text'
-						onChange={(e) => setItem(e.target.value)}
-						value={item}
-					/>
-					<input
-						type='text'
-						onChange={(e) => setUnits(e.target.value)}
-						value={units}
-					/>
-					<input
-						type='text'
-						onChange={(e) => setQuantity(e.target.value)}
-						value={quantity}
-					/>
-					{/* <input
-						type='checkbox'
-						onChange={(e) => setPurchase(e.target.checked)}
-						value={purchase}
-					/> */}
-					<button onClick={(e) => addNewItem(e)}>Submit</button>
-
+				<div className='fields'>
+					<div className='field'>
+						<label>Item</label>
+						<input
+							type='text'
+							placeholder='First Name'
+							onChange={(e) => setItem(e.target.value)}
+							value={item}
+						/>
+					</div>
+					<div className='field'>
+						<label>Units</label>
+						<input
+							type='text'
+							placeholder='Units'
+							onChange={(e) => setUnits(e.target.value)}
+							value={units}
+						/>
+					</div>
+					<div className='field'>
+						<label>Quantity</label>
+						<input
+							type='text'
+							placeholder='Quantity'
+							onChange={(e) => setQuantity(e.target.value)}
+							value={quantity}
+						/>
+					</div>
+					<button className='ui button' onClick={(e) => addNewItem(e)}>
+						Submit
+					</button>
 				</div>
 			</div>
 		</div>
@@ -93,3 +101,34 @@ const List = () => {
 };
 
 export default List;
+
+{/* <div className='ui form'>
+	<div className='field'>
+		<label htmlFor=''>Enter Grocery Item</label>
+
+		<div className='ui input focus'>
+			<input
+				type='text'
+				onChange={(e) => setItem(e.target.value)}
+				value={item}
+			/>
+		</div>
+		<div className='ui input focus'>
+			<input
+				type='text'
+				onChange={(e) => setUnits(e.target.value)}
+				value={units}
+			/>
+		</div>
+		<div className='ui input focus'>
+			<input
+				type='text'
+				onChange={(e) => setQuantity(e.target.value)}
+				value={quantity}
+			/>
+		</div>
+		<button className='ui button' onClick={(e) => addNewItem(e)}>
+			Submit
+		</button>
+	</div>
+</div>; */}
