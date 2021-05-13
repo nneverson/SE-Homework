@@ -41,7 +41,7 @@ const List = () => {
 	//useUe effect to update state?
 
 	return (
-		<div>
+		<div id='center'>
 			<h1>Grocery List</h1>
 
 			<ol className='ui ordered list'>
@@ -68,7 +68,7 @@ const List = () => {
 						<label>Item</label>
 						<input
 							type='text'
-							placeholder='First Name'
+							placeholder='Item'
 							onChange={(e) => setItem(e.target.value)}
 							value={item}
 						/>
@@ -102,6 +102,7 @@ const List = () => {
 
 export default List;
 
+//code with no semantic ui styling
 {/* <div className='ui form'>
 	<div className='field'>
 		<label htmlFor=''>Enter Grocery Item</label>
