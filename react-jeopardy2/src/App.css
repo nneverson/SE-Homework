@@ -12,5 +12,5 @@ body{
 }
 .Game{
     display: grid;
-    
+    flex-direction: column;
 }
