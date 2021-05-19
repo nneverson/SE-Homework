@@ -1,0 +1,16 @@
+*{
+    color: white;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: rgb(62,95,115);
+}
+.Game{
+    display: grid;
+    
+}

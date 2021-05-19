@@ -38,7 +38,7 @@ const List = () => {
 		// lines 34- 37 are setting the value of the input to the default values soooo the inputs reset after they are submitted.
 	};
 
-	//useUe effect to update state?
+
 
 	return (
 		<div id='center'>
