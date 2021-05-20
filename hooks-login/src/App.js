@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
+import './styles.css'
 
 function App() {
 	const adminUser = {
@@ -11,10 +12,23 @@ function App() {
 
 	const Login = (details) => {
 		console.log(details);
+
+		if (
+			details.email === adminUser.email &&
+			details.password === adminUser.password
+		) {
+			console.log('logged in');
+			setUser({
+				name: details.name,
+				email: details.email,
+			});
+		} else {
+			setError('invalid username or password');
+		}
 	};
 
 	const Logout = () => {
-		console.log('logout');
+		setUser({ name: '', email: '' });
 	};
 
 	return (
@@ -24,10 +38,10 @@ function App() {
 					<h2>
 						welcome <span>{user.name}</span>{' '}
 					</h2>
-					<button>Logout</button>
+					<button onClick={Logout}>Logout</button>
 				</div>
 			) : (
-				<LoginForm Login={Login} error={error}/>
+				<LoginForm Login={Login} error={error} />
 			)}
 		</div>
 	);

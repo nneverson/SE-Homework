@@ -12,7 +12,14 @@ function LoginForm({ Login, error }) {
 		<form onSubmit={submitHandler}>
 			<div className='form-inner'>
 				<h2>Login</h2>
-				{/* error */}
+				{error !== '' ? (
+					<div className='error' style={{ color: 'red' }}>
+						{' '}
+						{error}
+					</div>
+				) : (
+					''
+				)}
 				<div className='form-group'>
 					<label htmlFor='name'>Name:</label>
 					<input
